@@ -4,9 +4,9 @@ import { ChevronDown, Copy } from "lucide-react"
 export default function RegisteredDevicePage() {
   return (
     <Layout currentPage="device">
-      <div className="p-4 h-full overflow-auto">
+      <div className="px-3 pb-4 h-full overflow-auto">
         {/* Current Device */}
-        <div className="bg-[#f8f8f8] rounded-3xl p-4">
+        <div className="bg-[#f8f8f8] rounded-3xl p-3">
           <h3 className="font-medium text-gray-800">Current device</h3>
           <div className="flex items-center mt-2">
             <div className="text-xl font-bold">Nicovape® Q</div>

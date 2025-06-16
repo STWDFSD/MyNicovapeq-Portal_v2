@@ -48,7 +48,7 @@ export default function UsagePage() {
 
   return (
     <Layout currentPage="usage">
-      <div className="p-4 h-full overflow-auto">
+      <div className="px-3 h-full overflow-auto">
         {/* Usage Stats */}
         <div className="bg-[#deedff] rounded-3xl p-4">
           <h3 className="font-medium text-gray-800 text-lg">My average usage</h3>

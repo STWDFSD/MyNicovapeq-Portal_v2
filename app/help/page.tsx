@@ -3,7 +3,7 @@ import Layout from "@/components/layout"
 export default function HelpPage() {
   return (
     <Layout currentPage="help">
-      <div className="p-4 h-full overflow-auto">
+      <div className="px-3 h-full overflow-auto">
         <div className="bg-gray-50 rounded-3xl p-4">
           <h2 className="text-2xl font-bold">Help & Support</h2>
 

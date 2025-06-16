@@ -2,8 +2,11 @@
 
 import { User, Filter, Menu, Plus, Minus, Target } from "lucide-react"
 import { useRouter } from "next/navigation"
-import Logo from "@/components/logo"
-import Layout from "@/components/layout"
+import dynamic from 'next/dynamic'
+
+const Layout = dynamic(() => import('@/components/layout'), {
+  ssr: false
+})
 
 export default function PharmacyMapPage() {
   const router = useRouter()

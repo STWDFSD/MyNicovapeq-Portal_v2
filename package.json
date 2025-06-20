@@ -8,10 +8,13 @@
     "start": "next start",
     "lint": "next lint"
   },
+  "type": "module",
   "dependencies": {
     "@aws-amplify/auth": "latest",
     "@aws-amplify/core": "latest",
+    "@aws-sdk/client-sns": "^3.830.0",
     "@hookform/resolvers": "^3.9.1",
+    "@next/env": "^15.3.4",
     "@radix-ui/react-accordion": "latest",
     "@radix-ui/react-alert-dialog": "latest",
     "@radix-ui/react-aspect-ratio": "latest",
@@ -71,3 +74,4 @@
     "typescript": "^5"
   }
 }
+  

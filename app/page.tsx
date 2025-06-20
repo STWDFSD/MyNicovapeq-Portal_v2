@@ -1,28 +1,27 @@
-"use client"
+"use client";
 
-import { useEffect } from "react"
-import { useRouter } from "next/navigation"
-import Link from "next/link"
-import { CheckCircle } from "lucide-react"
-import Logo from "@/components/logo"
+import { useEffect } from "react";
+import { useRouter } from "next/navigation";
+import Link from "next/link";
+import { CheckCircle } from "lucide-react";
+import Logo from "@/components/logo";
 
 export default function HomePage() {
-  const router = useRouter()
+  const router = useRouter();
 
-  // Simulate device detection
-  useEffect(() => {
-    // This would be replaced with actual device detection logic
-    const isDeviceRegistered = localStorage.getItem("deviceRegistered") === "true"
+  // useEffect(() => {
+  //   const isDeviceRegistered =
+  //     localStorage.getItem("deviceRegistered") === "true";
 
-    if (isDeviceRegistered) {
-      router.push("/returning-user")
-    }
-  }, [router])
+  //   if (isDeviceRegistered) {
+  //     router.push("/returning-user");
+  //   }
+  // }, [router]);
 
   const handleRegister = () => {
     // For demo purposes, set the device as registered after registration
-    localStorage.setItem("deviceRegistered", "true")
-  }
+    localStorage.setItem("deviceRegistered", "true");
+  };
 
   return (
     <main className="h-screen max-h-screen flex flex-col items-center bg-gradient-to-b from-blue-400 via-blue-500 to-blue-800 text-white overflow-hidden">
@@ -35,7 +34,9 @@ export default function HomePage() {
           {/* Device Recognition Alert */}
           <div className="bg-green-50/90 text-gray-800 rounded-[15px] w-full py-3 px-4 flex items-center justify-center mt-2 mb-6">
             <CheckCircle className="w-5 h-5 mr-2 text-gray-800" />
-            <span className="text-base sm:text-lg font-medium">New unregistered device recognised</span>
+            <span className="text-base sm:text-lg font-medium">
+              New unregistered device recognised
+            </span>
           </div>
         </div>
 
@@ -52,8 +53,9 @@ export default function HomePage() {
           </h2>
 
           <p className="text-base sm:text-xl mt-4 mb-6">
-            Take control of your quit journey with features and insights designed to keep you informed, motivated and
-            supported along the way.
+            Take control of your quit journey with features and insights
+            designed to keep you informed, motivated and supported along the
+            way.
           </p>
         </div>
       </div>
@@ -77,5 +79,5 @@ export default function HomePage() {
         </div>
       </div>
     </main>
-  )
+  );
 }
